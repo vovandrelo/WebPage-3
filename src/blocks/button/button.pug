@@ -1,0 +1,7 @@
+mixin button(text, tag, option, mixAndMod = "")
+    if (tag === "button")
+        button.button(type=option class=mixAndMod)= text
+    else if (tag  === "a")
+        a.button(href=option class=mixAndMod)= text
+    else
+        button.button(class=mixAndMod)= text
